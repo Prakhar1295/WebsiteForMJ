@@ -1,34 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8" />
-  <title>For You ❤️</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For You 💕</title>
+
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Hey Love ❤️</h1>
-    <p>From random talks to my favorite person.</p>
-  </section>
+  <!-- INTRO SCREEN -->
+  <div id="introScreen">
+    <h1>Hey MJ 💌</h1>
+    <p>
+      I made something for you.<br>
+      Please open this with a smile.
+    </p>
+    <button id="enterBtn">Continue →</button>
+  </div>
 
-  <section class="memories">
-    <h2>Why You?</h2>
-    <p>You make normal days feel special.</p>
-    <p>You feel like home.</p>
-    <p>And I really like doing life with you.</p>
-  </section>
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
 
-  <section class="question">
-    <h2>So…</h2>
-    <h1>Will you be my Valentine? 💌</h1>
-    <button id="yesBtn">YES 💖</button>
-    <button id="noBtn">No 🙃</button>
-    <p id="hiddenMsg">YAYYY 💕 I knew it 🥰</p>
-  </section>
+  <!-- MAIN CONTENT -->
+  <div id="mainContent">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Hey MJ 💓</h1>
+      <p>From being a stranger to my favorite person.</p>
+      <p id="musicToggle">..</p>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="memories">
+      <h2>Why You?</h2>
+      <p>You feel like home.</p>
+      <p>And I really like doing life with you.</p>
+    </section>
+
+    <!-- QUESTION -->
+    <section class="question">
+      <h2>So…</h2>
+      <h1>Will you be my Valentine b? 💕</h1>
+
+      <div class="btn-group">
+        <button id="yesBtn">YES 💖</button>
+        <button id="noBtn">No 🙃</button>
+      </div>
+
+      <!-- SIDE BUTTON -->
+      <button id="reallyNoBtn">Really, NO???</button>
+
+      <!-- MESSAGE -->
+      <p id="hiddenMsg">YAYYYYYYYY LESGOOO 🥰</p>
+
+      <!-- YES GIF -->
+      <div id="yesGif" class="gif-container">
+        <div class="tenor-gif-embed"
+             data-postid="5894778"
+             data-share-method="host"
+             data-aspect-ratio="1.77"
+             data-width="100%">
+        </div>
+      </div>
+
+      <!-- REALLY NO GIF -->
+      <div id="noGif" class="gif-container">
+        <div class="tenor-gif-embed"
+             data-postid="6116579"
+             data-share-method="host"
+             data-aspect-ratio="1.79137"
+             data-width="100%">
+        </div>
+      </div>
+
+    </section>
+
+  </div>
 
   <script src="script.js"></script>
+  <script async src="https://tenor.com/embed.js"></script>
 </body>
 </html>
